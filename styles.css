@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* prevents scrolling */
+}
+
+body{
+    background-image: linear-gradient(161.15deg, #757575 12.73%, #050505 72.95%);
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 5vh ;
+    gap: 20px;
+}
+
+.card{
+    padding: 30px 20px;
+    width: 90%;
+    max-width: 1100px;
+    height: 80%;
+    max-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 3/4;
+    border-radius: 50px;
+    flex-direction: column;
+    perspective: 1000px;
+    position: relative;
+    cursor: pointer;
+}
+
+.front,.back{
+     padding: 5%;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50px;
+    top: 0;
+    left: 0;
+    transition: transform 0.6s, background-color 0.6s;
+}
+
+.front {
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+
+.back{
+    transform: rotateX(180deg);
+    background: rgba(255, 255, 255, 0.22);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3)
+}
+
+.card.flipped .front{
+transform: rotateX(180deg);
+}
+
+.card.flipped .back{
+    transform: rotateX(0deg);
+}
+.back .big-text{
+    font-size: 50px;
+    color: #f2f2f2;
+    font-weight: 700;
+    text-align: center;
+}
+
+.front .big-text{
+    font-size: 50px;
+    color:#f2f2f2;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subtext{
+    font-size: 16px;
+    text-align: center;
+    color: #ced4da;
+}
+
+.subtext-copy{
+    font-size: 16px;
+    text-align: center;
+    color: #adb5bd;
+}
+
+.smaller-text{
+    font-size: 18px;
+    color:#dee2e6;
+    text-align: center;
+}
+
+
+.shape {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;    /* top-right corner */
+    right: 20px;
+    transition: transform 0.2s;
+    
+  }
+  
+  .shape:hover {
+    transform: scale(1.1);
+  }
+
+  #instructions{
+    transition: opacity 0.6s ease;
+  }
+
+  #instructions.hidden{
+    pointer-events: none;
+  }
+  
+  /* responsiveness */
+  /* tablets, small laptops*/
+@media(min-width: 769px) and (max-width: 1200px) {
+    .card {
+        width: 65%;
+        max-width: 700px;
+        padding: 30px;
+
+    .front .big-text, .back .big-text{
+        font-size: 42px;
+        }
+
+    }
+}
+
+/* larger screens and desktops */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .card {
+        width: 60%;
+        max-width: 1000px;
+    }
+
+    .front .big-text,
+    .back .big-text {
+        font-size: 44px;
+    }
+
+    .subtext,.subtext-copy {
+        font-size: 13px;
+    }
+
+    body{
+        padding-top: 2dvh;
+        padding-bottom: 2dvh;
+    }
+}
+
+/* ultra wide monitors */
+@media (min-width: 1601px) {
+    .card {
+        width: 40%;
+        max-width: 1100px;
+    }
+
+    .front .big-text,
+    .back .big-text {
+        font-size: 54px;
+    }
+}
+
+/* medium phones, small tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .card {
+        width: 90%;
+        max-width: 500px;
+        padding: 25px;
+    }
+
+    .front .big-text,
+    .back .big-text {
+        font-size: 34px;
+    }
+
+    .smaller-text {
+        font-size: 16px;
+    }
+}
+
+/* small phones */
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+        max-width: 350px;
+        padding: 20px;
+        border-radius: 30px;
+        aspect-ratio: 3/4;
+    }
+
+    .front .big-text,
+    .back .big-text {
+        font-size: 26px;
+    }
+
+    .smaller-text {
+        font-size: 14px;
+    }
+
+    .shape {
+        width: 50px;
+        height: 50px;
+        top: 15px;
+        right: 15px;
+        font-size: 12px;
+    }
+
+    .subtext,
+    .subtext-copy {
+        font-size: 14px;
+    }
+}
+
