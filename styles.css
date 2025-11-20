@@ -212,8 +212,8 @@ transform: rotateX(180deg);
     }
 
     body{
-        padding-top: 2vh;
-        padding-bottom: 2vh;
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
     }
 }
 
