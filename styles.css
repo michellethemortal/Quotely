@@ -10,7 +10,7 @@ html, body {
 }
 
 body{
-    background-color:hsla(161,77%,83%,1);background-image:radial-gradient(circle at 7% 81%, hsla(231.89189189189187,94%,7%,1) 16%,transparent 53%),radial-gradient(circle at 5% 1%, hsla(231.89189189189187,94%,7%,1) 7%,transparent 84%),radial-gradient(circle at 32% 49%, hsla(231.89189189189187,94%,7%,1) 6%,transparent 68%),radial-gradient(circle at 11% 29%, hsla(185.58139534883722,40%,58%,1) 8%,transparent 74%),radial-gradient(circle at 90% 50%, hsla(219.85401459854015,95%,28%,1) 2%,transparent 85%);background-blend-mode:normal,normal,normal,normal,normal;
+    ackground-color:hsla(161,77%,83%,1);background-image:radial-gradient(circle at 7% 81%, hsla(231.89189189189187,94%,7%,1) 16%,transparent 53%),radial-gradient(circle at 30% 4%, hsla(224.76190476190476,87%,57%,1) 7%,transparent 84%),radial-gradient(circle at 32% 49%, hsla(231.89189189189187,94%,7%,1) 6%,transparent 68%),radial-gradient(circle at 11% 29%, hsla(185.58139534883722,40%,58%,1) 8%,transparent 74%),radial-gradient(circle at 90% 50%, hsla(219.85401459854015,95%,28%,1) 2%,transparent 85%);background-blend-mode:normal,normal,normal,normal,normal;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     display: flex;
     flex-direction: column;
