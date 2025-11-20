@@ -230,7 +230,7 @@ transform: rotateX(180deg);
         border-radius: 30px;
         height: auto;           /* allow flexible height */
         min-height: 300px;      /* ensures card is tall enough */
-        aspect-ratio: 3/4
+        aspect-ratio: 3/4;
         -webkit-tap-highlight-color: transparent;
         tap-hightlight-color: transparent;
     }
