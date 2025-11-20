@@ -6,7 +6,7 @@ const newQuoteBtn = document.getElementById('new-quote');
 
 const quotes = [
   { text: '"Love thy neighbour."', author: 'Jesus Christ', source: 'Son of God' },
-  { text: '"You rock! Thank you for checking out my work"', author: 'Michelle',source: 'Quirky Dev'},
+  { text: '"You rock! Thank you for checking out my work :)"', author: 'Michelle',source: 'Quotely Developer'},
   { text: '"I think, therefore I am."', author: 'René Descartes', source: 'Discourse on the Method' },
   { text: '"Be yourself, everyone else is already taken."', author: 'Oscar Wilde', source: 'Quote' },
   { text: '"Find someone who loves who you are, not who you could be."', author: 'Anonymous', source: 'Quote' },
