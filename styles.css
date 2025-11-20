@@ -203,7 +203,6 @@ transform: rotateX(180deg);
         max-width: 500px;
         padding: 25px;
         height: auto;
-        max-height: none;
         aspect-ratio: auto;
         -webkit-tap-highlight-color: transparent;
         tap-hightlight-color: transparent;
@@ -231,7 +230,6 @@ transform: rotateX(180deg);
         max-width: 350px;
         padding: 15px;
         border-radius: 30px;
-        height: auto;        /* let it scale */
         max-height: none;    /* remove limit */
         aspect-ratio: auto;  /* optional */
         -webkit-tap-highlight-color: transparent;
